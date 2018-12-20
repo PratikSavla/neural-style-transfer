@@ -7,8 +7,8 @@ loader = transforms.Compose([
     transforms.Resize(imsize),  # scale imported image
     transforms.ToTensor()])  # transform it into a torch tensor
 
-style_img = image_loader("./image1.jpg")
-content_img = image_loader("./image2.jpg")
+style_img = image_loader("./images/image1.jpg")
+content_img = image_loader("./images/image2.jpg")
 
 assert style_img.size() == content_img.size(), \
     "we need to import style and content images of the same size"
