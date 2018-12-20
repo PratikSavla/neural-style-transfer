@@ -21,6 +21,8 @@ loader = transforms.Compose([
     transforms.Resize(imsize),  # scale imported image
     transforms.ToTensor()]) # transform it into a torch tensor
 
+unloader = transforms.ToPILImage()
+
 def image_loader(image_name):
     image = Image.open(image_name)
     image = loader(image).unsqueeze(0)
