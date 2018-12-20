@@ -40,3 +40,5 @@ imshow(output, title='Output Image')
 # sphinx_gallery_thumbnail_number = 4
 plt.ioff()
 plt.show()
+
+plt.savefig('test.pdf')
