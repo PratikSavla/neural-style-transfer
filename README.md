@@ -1,2 +1,2 @@
 # neural-style-transfer
-Using pretrained VGG model for style transfer using pytorch.
+Neural style transfer using pretrained VGG model in pytorch.
